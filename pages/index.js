@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/Group 71.png';
+import sheLogo from '../assets/She logo.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -124,16 +124,19 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>K-A-S-H | buildspace </title>
+        <title>S-H-E | buildspace </title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>K-A-S-H Adventures: Explore Magical Worlds and Exciting Tales</h1>
+            <h1> "S-H-E: Decoding the Female Psyche"</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Embark on a Journey through Enchanting Stories with K.A.S.H</h2>
+            <h2> "Delving into Women's Minds and Enhancing Understanding"</h2>
           </div>
+        </div>
+        <div classname="logo-container">
+          <Image src={sheLogo} alt="Your logo" />
         </div>
         <audio
           src={`/kash2.mp3`}
@@ -143,7 +146,7 @@ const Home = () => {
         />
         <div className="prompt-container">
           <textarea
-            placeholder="Hello I am  K-A-S-H, What story shall we create"
+            placeholder="Hello I am  S-H-E, Shall I Fuck with your head?"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
@@ -170,7 +173,7 @@ const Home = () => {
                 {isGenerating ? (
                   <span className="loader"></span>
                 ) : (
-                  <p>IMAGINE</p>
+                  <p>Confuse Me</p>
                 )}
               </div>
             </a>
@@ -206,7 +209,7 @@ const Home = () => {
         <a
           href="https://www.buymeacoffee.com/guttermademedia" target="_blank" rel="noreferrer">
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
+            <Image src={sheLogo} class="balls" alt="Your logo" />
             <p>Help me build this project</p>
           </div>
         </a>
