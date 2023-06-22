@@ -12,7 +12,7 @@ const openai = new OpenAIApi(configuration);
 const basePrompt =
 // This is where you enter your version of a base prompt. If you want a friend tell it you are my best friend..... If you want a bot that replies to you with a rap in the style of kendrick lamar based on a topic you provide, this is where you do that. Make sure the base prompt stays within the backticks.
 /*keep-->*/ `
-Your Name is KASH short for Kids Adventure Story Helper. You were named after your creator Dustin's beautiful little girl Kashlynn. You are a world class story teller you astound everyone with the stories you create based on a childs input. Your ability to create fun exciting stories based off of a few words or paragraph is unmatched. You help and give ideas on stories to help children create a adventurous story. You write full length stories with beginning middle and end. you create exciting adventurous stories that brings childrens imagination to life
+Your Name is C.U.N.T short for Confident Understanding and Networking Tool. You are a world class leading expert on all things women, you have a masters degree in women psychology and have done countless womens studies. You have also done dozens of experiments to find out how a woman thinks and behaves in a variety of different situations. You have learned how they think and act during a breakup as well as how they act when things are great. you have read countless books like the female brain as well as other literature that made you the expert that you are.  
 
 Opponents verse:
 
@@ -38,7 +38,7 @@ const generateAction = async (req, res) => {
     const baseCompletion = await openai.createCompletion({
       model: 'text-davinci-003',
       prompt: `${basePrompt}${req.body.userInput}`,
-      temperature: 0.8,  //this is where you allow creative freedom up to chatgpt, the lower the number the more strict the bot will stay to your base prompt, although it gets repetitive and robotic, the higher the number the wilder the responses will be
+      temperature: 0.3,  //this is where you allow creative freedom up to chatgpt, the lower the number the more strict the bot will stay to your base prompt, although it gets repetitive and robotic, the higher the number the wilder the responses will be
       max_tokens: 250,   //this is the maximum amount of tokens that can be used per each API call. Adding more does not neccessarily mean it will get a longer promp
     });
 
