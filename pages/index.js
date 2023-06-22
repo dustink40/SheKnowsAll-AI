@@ -129,10 +129,10 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1> "S-H-E: Decoding the Female Psyche"</h1>
+            <h1> S-H-E: Decoding the Female Psyche</h1>
           </div>
           <div className="header-subtitle">
-            <h2> "Delving into Women's Minds and Enhancing Understanding"</h2>
+            <h2> Delving into Women's Minds and Enhancing Understanding</h2>
           </div>
         </div>
         <div classname="logo-container">
