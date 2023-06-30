@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/Group 71.png';
+import sheLogo from '../assets/ashe-logo.png':
 import { useState } from 'react';
 
 const Home = () => {
@@ -131,6 +132,7 @@ const Home = () => {
           <div className="header-title">
             <h1>S-H-E: Decoding the Female Psyche</h1>
           </div>
+          <Image src={sheLogo} alt="Pretty girl" />
           <div className="header-subtitle">
             <h2>Delving into Women's Minds and Enhancing Understanding</h2>
           </div>
