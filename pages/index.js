@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/Group 71.png';
-import sheLogo from '../assets/ashe-logo.png':
+import sheLogo from '../assets/she-logo.png';
 import { useState } from 'react';
 
 const Home = () => {
